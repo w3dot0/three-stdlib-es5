@@ -36,7 +36,8 @@
     "import/namespace": "off",
     "import/default": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "no-unused-vars": ["warn"],
+    // off because @typescript-eslint handles it and it messes up functions that are arguments that take it's own arguments.
+    "no-unused-vars": ["off"],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
